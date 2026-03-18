@@ -1941,7 +1941,7 @@ function applyAllSettings() {
     .detail-inner { width: ${settings.detailW}px !important; }
     #cards-wrap { grid-template-columns: repeat(auto-fill, minmax(${settings.cardMinW}px, 1fr)); }
     .card-content { font-size: ${settings.contentSize}px !important; line-height: ${settings.lineHeight} !important; font-family: ${CONTENT_FONT_MAP[settings.contentFont] || CONTENT_FONT_MAP.jetbrains} !important; }
-    .detail-content { line-height: ${settings.lineHeight} !important; font-family: ${CONTENT_FONT_MAP[settings.contentFont] || CONTENT_FONT_MAP.jetbrains} !important; }
+    .detail-content { line-height: ${settings.lineHeight} !important; font-family: ${CONTENT_FONT_MAP[settings.contentFont] || CONTENT_FONT_MAP.jetbrains} !important; overflow: auto;}
     .form-textarea { font-family: ${CONTENT_FONT_MAP[settings.contentFont] || CONTENT_FONT_MAP.jetbrains} !important; }
     ${!settings.animations ? `
       *, *::before, *::after { transition: none !important; animation: none !important; }
